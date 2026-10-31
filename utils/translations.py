@@ -1,0 +1,76 @@
+TRANSLATIONS = {
+    "Marathi": {
+        "title": "🌾 कृषिरक्षक AI",
+        "subtitle": "AI आधारित हवामान धोका आणि पीक सल्ला",
+        "description": "भारतातील शेतकऱ्यांसाठी हवामान आणि पीक संरक्षण माहिती.",
+        "language": "🌐 भाषा निवडा",
+        "city": "📍 तुमचे शहर लिहा",
+        "crop": "🌱 पीक निवडा",
+        "analyze": "🔍 हवामान आणि पीक धोका तपासा",
+        "current_weather": "🌤️ सध्याचे हवामान",
+        "temperature": "🌡️ तापमान",
+        "rainfall": "🌧️ पाऊस",
+        "wind": "💨 वाऱ्याचा वेग",
+        "forecast": "📅 हवामान अंदाज",
+        "max_temp": "🌡️ कमाल तापमान",
+        "min_temp": "🌡️ किमान तापमान",
+        "rain_probability": "☔ पावसाची शक्यता",
+        "forecast_risk": "🚨 आगामी हवामान धोके",
+        "current_risk": "⚠️ सध्याचे हवामान धोके",
+        "crop_advice": "🌱 पीक संरक्षण सूचना",
+        "upcoming_advice": "📅 आगामी पीक संरक्षण सूचना",
+        "assistant": "🤖 कृषिरक्षक AI सहाय्यक",
+    },
+
+    "Hindi": {
+        "title": "🌾 कृषिरक्षक AI",
+        "subtitle": "AI आधारित मौसम जोखिम और फसल सलाह",
+        "description": "भारत के किसानों के लिए मौसम और फसल सुरक्षा जानकारी।",
+        "language": "🌐 भाषा चुनें",
+        "city": "📍 अपना शहर दर्ज करें",
+        "crop": "🌱 फसल चुनें",
+        "analyze": "🔍 मौसम और फसल जोखिम जांचें",
+        "current_weather": "🌤️ वर्तमान मौसम",
+        "temperature": "🌡️ तापमान",
+        "rainfall": "🌧️ वर्षा",
+        "wind": "💨 हवा की गति",
+        "forecast": "📅 मौसम पूर्वानुमान",
+        "max_temp": "🌡️ अधिकतम तापमान",
+        "min_temp": "🌡️ न्यूनतम तापमान",
+        "rain_probability": "☔ बारिश की संभावना",
+        "forecast_risk": "🚨 आगामी मौसम जोखिम",
+        "current_risk": "⚠️ वर्तमान मौसम जोखिम",
+        "crop_advice": "🌱 फसल सुरक्षा सलाह",
+        "upcoming_advice": "📅 आगामी फसल सुरक्षा सलाह",
+        "assistant": "🤖 कृषिरक्षक AI सहायक",
+    },
+
+    "English": {
+        "title": "🌾 KrishiRakshak AI",
+        "subtitle": "AI-Powered Weather Risk & Crop Advisory",
+        "description": "Helping farmers across India understand weather risks.",
+        "language": "🌐 Select Language",
+        "city": "📍 Enter Your City",
+        "crop": "🌱 Select Your Crop",
+        "analyze": "🔍 Analyze Weather & Crop Risks",
+        "current_weather": "🌤️ Current Weather",
+        "temperature": "🌡️ Temperature",
+        "rainfall": "🌧️ Rainfall",
+        "wind": "💨 Wind Speed",
+        "forecast": "📅 Weather Forecast",
+        "max_temp": "🌡️ Maximum Temperature",
+        "min_temp": "🌡️ Minimum Temperature",
+        "rain_probability": "☔ Rain Probability",
+        "forecast_risk": "🚨 Upcoming Weather Risk Alerts",
+        "current_risk": "⚠️ Weather Risk Analysis",
+        "crop_advice": "🌱 Crop Precautions",
+        "upcoming_advice": "📅 Upcoming Crop Precautions",
+        "assistant": "🤖 KrishiRakshak AI Assistant",
+    }
+}
+
+
+def get_text(language, key):
+    return TRANSLATIONS.get(
+        language, TRANSLATIONS["English"]
+    ).get(key, key)
